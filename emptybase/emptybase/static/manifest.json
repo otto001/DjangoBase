@@ -1,0 +1,15 @@
+{
+  "name": "Room Control",
+  "short_name": "RCtrl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple escape game control app.",
+  "icons": [{
+    "src": "static/favicon.ico",
+    "sizes": "128x128",
+    "type": "image/x-icon"
+  }],
+  "orientation": "portrait-primary",
+  "theme_color": "#212121"
+}

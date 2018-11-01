@@ -1,0 +1,34 @@
+{% extends 'emptybase/base.html' %}
+
+
+{% load staticfiles %}
+
+
+{% block title %}TITLE_HERE{% endblock %}
+
+
+{% block head %}
+
+<link rel="shortcut icon" type="image/x-icon" href="{% static '/favicon.ico' %}"/>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/material_extensions.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+:root {
+  --theme-primary: #212121;
+  --theme-primary-light: #686868;
+  --theme-primary-dark: #454545;
+
+  --theme-secondary: #7CB342;
+  --theme-secondary-light: #9CCC65;
+  --theme-secondary-dark: #558B2F;
+
+  --theme-background: #fff;
+}
+</style>

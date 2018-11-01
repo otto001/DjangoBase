@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html{% if LANGUAGE_CODE %} lang="{{ LANGUAGE_CODE }}"{% endif %}>
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="{% static 'manifest.json' %}">
+<head>
+    <meta charset="utf-8">
+    
+    {% include "emptybase/material_design.html" %}
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+{% block content %}{% endblock %}
+</body>
+
+</html>
